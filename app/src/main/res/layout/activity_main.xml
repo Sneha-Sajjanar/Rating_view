@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131313"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="50dp" />
+
+    <TextView
+        android:id="@+id/rating_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rating_result"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/adobegothicstdbold"
+        android:text="Rate The Service"
+        android:textAlignment="center"
+        android:textColor="#848484"
+        android:textSize="10dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/rating_result"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/rateStars"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/adobegothicstdbold"
+        android:text="Good Enough"
+        android:textAlignment="center"
+        android:textColor="#FAADADAD"
+        android:textSize="28sp"
+        android:gravity="center_horizontal" />
+
+
+    <RatingBar
+        android:id="@+id/rateStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_Submit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="79dp"
+        android:numStars="5"
+        android:rating="1"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/button"
+        android:clickable="true"
+        android:fontFamily="@font/ubuntu"
+        android:text="Give FeedBack"
+        android:textAllCaps="false"
+        android:textColor="#FCFAFA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/emoji"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/one"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
